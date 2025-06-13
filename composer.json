@@ -1,0 +1,32 @@
+{
+    "name": "branzia/admin",
+    "description": "Branzia Admin Package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Visvanathan",
+            "email": "visvanathan.tech@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Branzia\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Branzia\\Admin\\AdminServiceProvider",
+                "Branzia\\Admin\\AdminPanelProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "3.3"
+    }
+}
