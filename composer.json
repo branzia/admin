@@ -17,8 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Branzia\\Admin\\AdminServiceProvider",
-                "Branzia\\Admin\\AdminPanelProvider"
+                "Branzia\\Admin\\AdminServiceProvider"
             ],
             "aliases": {}
         }
