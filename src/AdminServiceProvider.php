@@ -18,6 +18,7 @@ class AdminServiceProvider extends BranziaServiceProvider implements ProvidesFil
     {
         
         parent::boot();
+        
     }
 
     public function register(): void
