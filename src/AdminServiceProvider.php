@@ -26,21 +26,5 @@ class AdminServiceProvider extends BranziaServiceProvider implements ProvidesFil
         parent::register();
     }
 
-    public static function filamentDiscoveryPaths(): array
-    {
-        return [
-            'resources' => [
-                ['path' => __DIR__.'/Filament/Resources', 'namespace' => 'Branzia\\Admin\\Filament\\Resources'],
-            ],
-            'pages' => [
-                ['path' => __DIR__.'/Filament/Pages', 'namespace' => 'Branzia\\Admin\\Filament\\Pages'],
-            ],
-            'clusters' => [
-                ['path' => __DIR__.'/Filament/Clusters', 'namespace' => 'Branzia\\Admin\\Filament\\Clusters'],
-            ],
-            'widgets' => [
-                ['path' => __DIR__.'/Filament/Widgets', 'namespace' => 'Branzia\\Admin\\Filament\\Widgets'],
-            ],
-        ];
-    }
+    
 }
