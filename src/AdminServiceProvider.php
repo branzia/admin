@@ -3,7 +3,9 @@ namespace Branzia\Admin;
 
 use Filament\Facades\Filament;
 use Branzia\Blueprint\BranziaServiceProvider;
+use Branzia\Settings\Services\SettingsRegistry;
 use Branzia\Blueprint\Contracts\ProvidesFilamentDiscovery;
+
 class AdminServiceProvider extends BranziaServiceProvider implements ProvidesFilamentDiscovery
 {
     public function moduleName(): string
@@ -18,7 +20,7 @@ class AdminServiceProvider extends BranziaServiceProvider implements ProvidesFil
     {
         
         parent::boot();
-        
+        SettingsRegistry::push(\Branzia\Admin\Filament\Settings\Admin::class);
     }
 
     public function register(): void
